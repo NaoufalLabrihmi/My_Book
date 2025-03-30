@@ -239,37 +239,8 @@ $\cdot$ - Produit scalaire
 4. **Respecter** la structure du document existant
 5. **Placer** les images dans le dossier `Images/`
 
-## Git et versionnement
-
-### Fichier .gitignore
-
-Le projet inclut un fichier `.gitignore` configuré pour ne suivre que les fichiers source essentiels. Voici comment il fonctionne :
-
-```
-# Ignorer tous les fichiers par défaut
-/*
-
-# Suivre uniquement les fichiers source
-!/.gitignore
-!*.md                # Tous les fichiers markdown (README.md, etc.)
-!LICENSE            # Fichier de licence
-!main.tex            # Le document principal
-!backagBook.cls      # La classe LaTeX personnalisée
-!sample.bib          # La bibliographie
-!indexstyle.ist      # Le style d'index
-!/Images/            # Le dossier des images
-!/Images/*.pdf       # Les images PDF
-!/Images/*.jpg       # Les images JPG
-!/Images/*.png       # Les images PNG
-```
-
-Cette configuration garantit que:
-- Seuls les fichiers source importants sont suivis par Git
-- Tous les fichiers générés lors de la compilation sont ignorés
-- Les images nécessaires au document sont incluses
 
 ### Licence
 
 Le projet est distribué sous licence MIT, comme spécifié dans le fichier `LICENSE`. Assurez-vous de conserver l'attribution à l'auteur original (Naoufal Labrihmi) lorsque vous réutilisez ou distribuez ce code.
 
-### Commandes Git essentielles

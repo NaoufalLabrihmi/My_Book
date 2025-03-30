@@ -243,53 +243,33 @@ $\cdot$ - Produit scalaire
 
 ### Fichier .gitignore
 
-Le projet inclut un fichier `.gitignore` qui empêche le suivi des fichiers temporaires générés lors de la compilation. Voici les principaux types de fichiers ignorés :
+Le projet inclut un fichier `.gitignore` configuré pour ne suivre que les fichiers source essentiels. Voici comment il fonctionne :
 
 ```
-# Fichiers LaTeX générés
-*.aux
-*.log
-*.out
-*.toc
-*.synctex.gz
+# Ignorer tous les fichiers par défaut
+/*
 
-# Bibliographie
-*.bbl
-*.bcf
-*.blg
-
-# Index
-*.idx
-*.ilg
-*.ind
-
-# PDF générés (sauf les images)
-*.pdf
-!Images/*.pdf
+# Suivre uniquement les fichiers source
+!/.gitignore
+!*.md                # Tous les fichiers markdown (README.md, etc.)
+!LICENSE            # Fichier de licence
+!main.tex            # Le document principal
+!backagBook.cls      # La classe LaTeX personnalisée
+!sample.bib          # La bibliographie
+!indexstyle.ist      # Le style d'index
+!/Images/            # Le dossier des images
+!/Images/*.pdf       # Les images PDF
+!/Images/*.jpg       # Les images JPG
+!/Images/*.png       # Les images PNG
 ```
+
+Cette configuration garantit que:
+- Seuls les fichiers source importants sont suivis par Git
+- Tous les fichiers générés lors de la compilation sont ignorés
+- Les images nécessaires au document sont incluses
+
+### Licence
+
+Le projet est distribué sous licence MIT, comme spécifié dans le fichier `LICENSE`. Assurez-vous de conserver l'attribution à l'auteur original (Naoufal Labrihmi) lorsque vous réutilisez ou distribuez ce code.
 
 ### Commandes Git essentielles
-
-```bash
-# Cloner le dépôt
-git clone [URL du dépôt]
-
-# Créer une nouvelle branche pour vos modifications
-git checkout -b ma-contribution
-
-# Ajouter vos modifications
-git add .
-
-# Valider vos modifications
-git commit -m "Description des modifications"
-
-# Envoyer vos modifications au dépôt distant
-git push origin ma-contribution
-```
-
-Pour contribuer au projet :
-1. Créez toujours une nouvelle branche
-2. Compilez localement pour vérifier que tout fonctionne
-3. Suivez les conventions de structure et de style du document
-4. Ne poussez jamais de fichiers générés (ils sont ignorés par `.gitignore`)
-

@@ -99,6 +99,7 @@ _minted*/
 /*
 !/.gitignore
 !*.md
+!LICENSE
 !main.tex
 !backagBook.cls
 !sample.bib

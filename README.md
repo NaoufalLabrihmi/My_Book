@@ -149,7 +149,16 @@ Le manuel est divisé en plusieurs parties :
 
 ## 📄 Licence
 
-Ce projet est sous licence MIT. Voir le fichier de licence pour plus de détails.
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+```
+Copyright (c) 2025 Naoufal Labrihmi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files...
+```
+
+Vous êtes libre d'utiliser, modifier et distribuer ce projet, sous réserve d'inclure la notice de copyright originale.
 
 ## 👥 Contact
 

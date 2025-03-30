@@ -1,0 +1,95 @@
+# Fichiers LaTeX générés
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.ptc
+*.dvi
+*.xdv
+**/auto/
+.*.lb
+
+# Bibliographie
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Index
+*.idx
+*.ilg
+*.ind
+*.ist
+
+# Paquets
+*.loa
+
+# Glossaire
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+
+# Makeindex
+*.idx
+*.ilg
+*.ind
+
+# Listings
+*.lol
+
+# Beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# Fichiers générés par pdflatex/xelatex
+*.pdf
+!Images/*.pdf  # Garder les PDF dans le dossier Images
+
+# Fichiers temporaires
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Fichiers éditeurs
+*~
+*.bak
+*.swp
+.DS_Store
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Overleaf
+.texpadtmp
+
+# Fichiers binaires et générés
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.a
+*.obj
+
+# Dossiers à ignorer
+_minted*/ 

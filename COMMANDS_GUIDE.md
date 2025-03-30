@@ -114,6 +114,72 @@ Texte avec une formule $f(x) = x^2$ en ligne.
 \end{align}
 ```
 
+### Gestion de la taille des formules
+
+> **Note importante**: Les commandes ci-dessous sont disponibles grâce au package `amsmath` qui est déjà inclus dans la classe `backagBook.cls`. Vous n'avez donc **pas besoin** d'ajouter ce package vous-même.
+
+Si les fractions ou les racines apparaissent trop petites, utilisez ces solutions :
+
+#### Pour les fractions trop petites en mode en ligne
+
+```latex
+% Fraction en mode en ligne (petite taille par défaut)
+$\frac{a}{b}$
+
+% Fraction de taille normale même en mode en ligne
+$\dfrac{a}{b}$
+
+% Fraction forcée en petite taille
+$\tfrac{a}{b}$
+
+% Forcer le style d'affichage même en mode en ligne
+$\displaystyle \frac{a}{b}$
+```
+
+#### Pour les indices ou exposants trop petits
+
+```latex
+% Indice normal
+$a_i$
+
+% Indice avec contenu complexe
+$a_{i+j}$  
+
+% Indice avec fraction (problème de taille)
+$a_{\frac{i}{j}}$
+
+% Solution: utiliser \displaystyle dans l'indice
+$a_{\displaystyle\frac{i}{j}}$
+```
+
+#### Pour les racines avec contenu complexe
+
+```latex
+% Racine standard
+$\sqrt{x+y}$
+
+% Racine avec fraction (peut être petite)
+$\sqrt{\frac{x}{y}}$
+
+% Solution: utiliser \displaystyle
+$\sqrt{\displaystyle\frac{x}{y}}$
+```
+
+#### Ajustement général de la taille de l'équation
+
+```latex
+% Taille normale
+$\sum_{i=1}^n i$
+
+% Grande taille (style d'affichage)
+$\displaystyle \sum_{i=1}^n i$
+
+% Pour l'ensemble de l'équation
+\begin{equation}
+    \displaystyle \int_0^1 \frac{x^2}{\sqrt{1-x^2}} \, dx
+\end{equation}
+```
+
 ## Listes
 
 ### Liste à puces
@@ -239,8 +305,6 @@ $\cdot$ - Produit scalaire
 4. **Respecter** la structure du document existant
 5. **Placer** les images dans le dossier `Images/`
 
-
 ### Licence
 
 Le projet est distribué sous licence MIT, comme spécifié dans le fichier `LICENSE`. Assurez-vous de conserver l'attribution à l'auteur original (Naoufal Labrihmi) lorsque vous réutilisez ou distribuez ce code.
-

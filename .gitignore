@@ -29,6 +29,7 @@
 *.ilg
 *.ind
 *.ist
+!indexstyle.ist  # Garder le fichier de style d'index
 
 # Paquets
 *.loa
@@ -92,4 +93,18 @@
 *.obj
 
 # Dossiers à ignorer
-_minted*/ 
+_minted*/
+
+# Ignorer tous les fichiers, puis exclure explicitement les fichiers source
+/*
+!/.gitignore
+!*.md
+!main.tex
+!backagBook.cls
+!sample.bib
+!indexstyle.ist
+!/Images/
+!/Images/*.pdf
+!/Images/*.jpg
+!/Images/*.png
+

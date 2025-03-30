@@ -2,7 +2,6 @@
 
 Ce projet est un manuel de mathématiques pour le Tronc Commun Scientifique au Maroc, conçu comme un support pédagogique complet pour les élèves et les enseignants.
 
-![Couverture](Images/peakpx.jpg)
 
 ## 📚 À propos du projet
 
